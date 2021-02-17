@@ -42,4 +42,11 @@ public class HousewifeTest {
         housewife.setSocialCapitalPoints(150);
         assertEquals(150, housewife.getSocialCapitalPoints());
     }
+
+    @Test
+    public void canAcceptDamage(){
+        housewife.acceptDamage(50);
+        assertEquals(50, housewife.getSocialCapitalPoints());
+    }
 }
+
