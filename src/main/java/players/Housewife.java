@@ -4,11 +4,15 @@ import items.WeaponType;
 
 public class Housewife extends Player{
 
-    public Housewife(String name, int socialCapitalPoints, WeaponType weaponType){
+    private Mythicalchild mythicalChild;
+
+    public Housewife(String name, int socialCapitalPoints, WeaponType weaponType, Mythicalchild mythicalChild){
         super(name, socialCapitalPoints, weaponType);
+        this.mythicalChild = mythicalChild;
 
     }
 
-
-
+    public Mythicalchild getMythicalChild() {
+        return mythicalChild;
+    }
 }

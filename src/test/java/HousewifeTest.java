@@ -2,6 +2,7 @@ import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 import players.Housewife;
+import players.Mythicalchild;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,10 +11,12 @@ import static org.junit.Assert.assertFalse;
 public class HousewifeTest {
 
     Housewife housewife;
+    Mythicalchild mythicalchild;
 
     @Before
     public void before(){
-        housewife = new Housewife("Bree Van de Kamp", 100, WeaponType.HANDBAG );
+        mythicalchild = new Mythicalchild("Bruce", 18.00);
+        housewife = new Housewife("Bree Van de Kamp", 100, WeaponType.HANDBAG, mythicalchild);
     }
 
     @Test
@@ -53,6 +56,11 @@ public class HousewifeTest {
     public void canChangeWeapon() {
         housewife.setWeaponType(WeaponType.SASS);
         assertEquals(WeaponType.SASS, housewife.getWeaponType());
+    }
+
+    @Test
+    public void hasMythicalChild() {
+       assertEquals(mythicalchild ,housewife.getMythicalChild());
     }
 }
 
