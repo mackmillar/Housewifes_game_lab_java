@@ -19,4 +19,9 @@ public class HousewifeTest {
     public void hasName() {
         assertEquals("Bree Van de Kamp", housewife.getName());
     }
+
+    @Test
+    public void hasSocialPoints() {
+        assertEquals(100, housewife.getSocialCapitalPoints());
+    }
 }
