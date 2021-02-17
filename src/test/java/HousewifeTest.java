@@ -24,4 +24,9 @@ public class HousewifeTest {
     public void hasSocialPoints() {
         assertEquals(100, housewife.getSocialCapitalPoints());
     }
+
+    @Test
+    public void hasWeapon() {
+        assertEquals(WeaponType.HANDBAG, housewife.getWeaponType());
+    }
 }
