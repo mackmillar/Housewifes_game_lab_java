@@ -4,6 +4,7 @@ import org.junit.Test;
 import players.Housewife;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 
 public class HousewifeTest {
@@ -28,5 +29,11 @@ public class HousewifeTest {
     @Test
     public void hasWeapon() {
         assertEquals(WeaponType.HANDBAG, housewife.getWeaponType());
+    }
+
+    @Test
+    public void canKill() {
+        housewife.kill();
+        assertFalse(housewife.isAlive());
     }
 }
