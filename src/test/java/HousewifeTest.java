@@ -48,5 +48,11 @@ public class HousewifeTest {
         housewife.acceptDamage(50);
         assertEquals(50, housewife.getSocialCapitalPoints());
     }
+
+    @Test
+    public void canChangeWeapon() {
+        housewife.setWeaponType(WeaponType.SASS);
+        assertEquals(WeaponType.SASS, housewife.getWeaponType());
+    }
 }
 
