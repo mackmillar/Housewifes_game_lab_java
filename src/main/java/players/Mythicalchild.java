@@ -17,4 +17,8 @@ public class Mythicalchild implements IDefend {
     public String defend(){
         return "Leave my mummy alone.";
     }
+
+    public double getBedtime() {
+        return this.bedTime;
+    }
 }

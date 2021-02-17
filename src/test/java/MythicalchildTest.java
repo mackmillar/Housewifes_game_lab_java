@@ -17,4 +17,9 @@ public class MythicalchildTest {
     public void canDefend(){
        assertEquals("Leave my mummy alone.", mythicalchild.defend());
     }
+
+    @Test
+    public void canGetBedtime(){
+        assertEquals(19.00, mythicalchild.getBedtime(), 0);
+    }
 }
