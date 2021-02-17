@@ -36,4 +36,10 @@ public class HousewifeTest {
         housewife.kill();
         assertFalse(housewife.isAlive());
     }
+
+    @Test
+    public void canSetSocialCapitalPoints(){
+        housewife.setSocialCapitalPoints(150);
+        assertEquals(150, housewife.getSocialCapitalPoints());
+    }
 }
