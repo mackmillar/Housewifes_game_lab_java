@@ -1,5 +1,6 @@
 package players;
 
+import houses.House;
 import items.WeaponType;
 
 public class Housewife extends Player{
@@ -10,6 +11,10 @@ public class Housewife extends Player{
         super(name, socialCapitalPoints, weaponType);
         this.mythicalChild = mythicalChild;
 
+    }
+
+    public void enterHouse(House house){
+        house.addGuest(this);
     }
 
     public Mythicalchild getMythicalChild() {
